@@ -1,8 +1,8 @@
-from math import *
+from math import *    # imports math library
 
 
 name = "John"
-age = 35 # have to cast to string to concatenate
+age = 35   # have to cast to string to concatenate
 character_alive = True
 print("Age: " + str(age) + "\n" + "Name: " + name)
 # " to create a quotation in line,
@@ -82,7 +82,57 @@ else:
     print("ur a female")
 # for numbers all boolean operators apply
 
+# while loop
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
 
+# for loops
+for letter in "Giraffe":
+    print(letter)
+
+for i in range(len(friends)):
+    print(i)
+for i in range(3,10):
+    print(i)
+# not inclusive for second variable in range
+
+#exponenet function
+print(2**3)
+def raise_to_power(base_num, power):
+    result = 1
+    for i in range(power):
+        result = result*base_num
+    return result
+raise_to_power(2,3)
+
+#2D Lists
+number_grid = [  # list has 4 rows and 3 columns
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [0]
+]
+print(number_grid[0][0])
+for row in number_grid:  # prints out every element in array
+    for col in row:
+        print(col)
+
+
+# creating a student from the HowToMakeAClass file
+# that shows you the actual format of how to make a class.
+# Init here
+from HowtoMakeAClass import Student
+student1 = Student("Jim", "business", 3.1, False) # creates a student named Jim who is majoring in business, with a 3.1 GPA and isn't on probation
+print(student1.name)   # prints out Jim
+print(student1.gpa)  # prints out gpa
+student2 = ("Pam", "art", 2.5, True)
+print(student1.honorRoll) #executes the honorRoll function that I wrote in the class
+#list of students, adding our 2 students
+classroom = []
+classroom.append(student1)
+classroom.append(student2)
 
 
 

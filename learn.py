@@ -57,6 +57,8 @@ coordinates = (4, 5)
 print(coordinates[0])  # same indexing as lists
 coordinates = [(4, 5), (5, 6), (9, 9)] # list of tuples
 
+#check out how to make a dictionary object with a key and value in the Month Dictionary file
+
 # functions
 def say_hi(name):
     print("Hello" + name)
